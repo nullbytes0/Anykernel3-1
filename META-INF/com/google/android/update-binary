@@ -220,7 +220,7 @@ do_devicecheck() {
     done;
   done;
   if [ ! "$match" ]; then
-    abort " - Unsupported device. Aborting...";
+    abort " " "Unsupported device. Aborting...";
   fi;
 }
 int2ver() {
@@ -256,7 +256,7 @@ do_versioncheck() {
   if [ "$supported" ]; then
     ui_print "$android_ver" " ";
   else
-    abort " - Unsupported Android version. Aborting...";
+    abort " " "Unsupported Android version. Aborting...";
   fi;
 }
 do_levelcheck() {
@@ -279,7 +279,7 @@ do_levelcheck() {
   if echo -e "$hi_lvl\n$lo_lvl\n$parsed_lvl" | $BB sort -g | $BB grep -n "$parsed_lvl" | $BB grep -q '^2:'; then
     ui_print "$android_lvl" " ";
   else
-    abort " - Unsupported Android security patch level. Aborting...";
+    abort " " "Unsupported Android security patch level. Aborting...";
   fi;
 }
 dump_moduleinfo() {
@@ -421,9 +421,7 @@ debugging;
 restore_env;
 
 if [ "$(file_getprop anykernel.sh do.cleanup)" == 1 ]; then
-  ui_print " - Cleaning up...";
   cleanup;
 fi;
 
-ui_print " - Done!";
-ui_print " - Enjoy the Dark Ages! ";
+ui_print " " " " "Done!";
