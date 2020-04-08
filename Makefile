@@ -1,14 +1,14 @@
-NAME ?= Dark-Matter
+NAME ?= Dark-Ages
 
 
 DATE := $(shell date "+%d%m%Y-%I%M")
 
-VERSION := I
+VERSION := Primero-Beta
 SZIP := $(NAME)-$(VERSION)-STABLE-$(DATE).zip
 BZIP := $(NAME)-$(VERSION)-BETA-$(DATE).zip
 
 
-EXCLUDE := Makefile *.git* *.jar* Dark-Matter* *placeholder*
+EXCLUDE := Makefile *.git* *.jar* Dark-Ages* *placeholder*
 
 stable: $(SZIP)
 beta: $(BZIP)
@@ -30,6 +30,6 @@ $(BZIP):
 	@echo "Done."
 
 clean:
-	@rm -vf "$(NAME)-"*.zip*
-	@rm -vf boot/zImage
+	@rm -vf *.zip*
+	@rm -vf zImage
 	@echo "Done."
