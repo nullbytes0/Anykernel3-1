@@ -3,7 +3,7 @@ NAME ?= Dark-Ages
 
 DATE := $(shell date "+%d%m%Y-%I%M")
 
-VERSION := Primero-Beta
+VERSION := Primero
 ZIP := $(NAME)-$(VERSION)-$(DATE).zip
 
 EXCLUDE := Makefile *.git* *.jar* Dark-Ages* *placeholder*
