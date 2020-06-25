@@ -34,12 +34,5 @@ set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
 ## AnyKernel install
 dump_boot;
 
-# begin ramdisk changes
-
-# init.rc
-remove_line init.rc "import /init.da.rc"
-insert_line init.rc "import /init.da.rc" after "import /init.usb.rc" "import /init.da.rc";
-# end ramdisk changes
-
 write_boot;
 ## end install
