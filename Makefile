@@ -3,7 +3,7 @@ NAME ?= Dark-Ages
 
 DATE := $(shell date "+%d%m%Y-%I%M")
 
-VERSION := Primero
+VERSION := Segundo
 ZIP := $(NAME)-$(VERSION)-$(DATE).zip
 BZIP := $(NAME)-$(VERSION)-BETA-$(DATE).zip
 
