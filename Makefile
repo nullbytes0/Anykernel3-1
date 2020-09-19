@@ -2,10 +2,11 @@ NAME ?= Dark-Ages
 
 DATE := $(shell date "+%d%m%Y-%I%M")
 CODE := Segundo
+BCODE := Tercero
 VERSION := 4.14-$(LINUX_VERSION)
 
 ZIP := $(NAME)-$(CODE)-$(VERSION)-$(DATE).zip
-BZIP := $(NAME)-$(CODE)-$(VERSION)-BETA-$(DATE).zip
+BZIP := $(NAME)-$(BCODE)-$(VERSION)-BETA-$(DATE).zip
 
 EXCLUDE := Makefile *.git* *.jar* Dark-Ages* *placeholder*
 
