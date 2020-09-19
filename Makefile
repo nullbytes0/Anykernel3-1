@@ -10,6 +10,7 @@ BZIP := $(NAME)-$(CODE)-$(VERSION)-BETA-$(DATE).zip
 EXCLUDE := Makefile *.git* *.jar* Dark-Ages* *placeholder*
 
 stable: $(ZIP)
+beta: $(BZIP)
 
 $(ZIP):
 	@echo "Creating ZIP: $(ZIP)"
