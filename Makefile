@@ -6,7 +6,7 @@ BCODE := Tercero
 VERSION := 4.14-$(LINUX_VERSION)
 
 ZIP := $(NAME)-$(CODE)-$(VERSION)-$(DATE).zip
-BZIP := $(NAME)-$(BCODE)-$(VERSION)-BETA-$(DATE).zip
+BZIP := $(NAME)-$(BCODE)-BETA-$(VERSION)-$(DATE).zip
 
 EXCLUDE := Makefile *.git* *.jar* Dark-Ages* *placeholder*
 
