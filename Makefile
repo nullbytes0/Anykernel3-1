@@ -1,7 +1,7 @@
 NAME ?= Dark-Ages
 
 DATE := $(shell date "+%d%m%Y-%I%M")
-CODE := Segundo
+CODE := Tercero
 BCODE := Tercero
 
 ZIP := $(NAME)-$(CODE)-$(DATE).zip
