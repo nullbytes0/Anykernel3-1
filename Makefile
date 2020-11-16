@@ -1,6 +1,6 @@
 NAME ?= Dark-Ages
 DATE := $(shell date "+%d%m%Y-%I%M")
-CODE := Décimo
+CODE := Último
 VERSION := 4.9-$(LINUX_VERSION)
 
 SZIP := $(NAME)-$(CODE)-$(VERSION)-STABLE-$(DATE).zip
