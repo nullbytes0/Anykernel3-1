@@ -1,13 +1,13 @@
-NAME ?= Dark-Ages
+NAME ?= Venom
 DATE := $(shell date "+%d%m%Y-%I%M")
-CODE := Último
+CODE := Beta
 VERSION := 4.9-$(LINUX_VERSION)
 
 SZIP := $(NAME)-$(CODE)-$(VERSION)-STABLE-$(DATE).zip
 BZIP := $(NAME)-$(CODE)-$(VERSION)-BETA-$(DATE).zip
 
 
-EXCLUDE := Makefile *.git* *.jar* Dark-Ages* *placeholder*
+EXCLUDE := Makefile *.git* *.jar* Venom* *placeholder*
 
 stable: $(SZIP)
 beta: $(BZIP)
