@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Dark-Ages Kernel By Blacksuan19
+kernel.string=Venom
 do.devicecheck=1
 do.modules=0
 do.cleanup=1
